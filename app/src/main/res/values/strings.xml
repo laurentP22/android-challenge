@@ -1,0 +1,44 @@
+<resources>
+    <!-- General -->
+    <string name="app_name">TV Maze</string>
+    <string name="menu_series">Series</string>
+    <string name="menu_favorites">Favorites</string>
+    <string name="menu_persons">Persons</string>
+
+    <string name="retry">Retry</string>
+    <string name="error_image_desc">Error loading data</string>
+
+    <string name="search_hint">Game of Thrones</string>
+    <string name="name">Name</string>
+    <string name="summary">Summary</string>
+    <string name="broadcast">Broadcast</string>
+    <string name="season_nb">Season %1$d</string>
+    <string name="season_episode_nb">S%1$dE%2$d</string>
+    <string name="series_days">Days and time during which series airs</string>
+    <string name="series_genres">Genres</string>
+    <string name="series_first_broadcast">First episode broadcast the %1$s.</string>
+    <string name="series_last_broadcast">Last episode broadcast the %1$s.</string>
+    <string name="series_time">Total time: %1$s.</string>
+    <string name="series_seasons">Seasons</string>
+    <string name="series_image_desc">Image of the series</string>
+
+    <string name="episode_image_desc">Image of the episode</string>
+    <string name="series">Series</string>
+    <string name="episode">Episode</string>
+
+    <string name="fav_image_desc">Adds or removes series from favorites</string>
+    <string name="empty_favorites">You don\'t have any series saved yet.</string>
+
+    <string name="authentication">Authentication</string>
+    <string name="add_authentication">Set a PIN number to secure the application and prevent unauthorized users.</string>
+    <string name="login_biometric_title">Biometric login</string>
+    <string name="login_biometric_subtitle">Log in using your biometric credential</string>
+    <string name="login_pin_subtitle">Log in using PIN number</string>
+    <string name="wrong_pin">Wrong PIN, try again</string>
+    <string name="good_pin">Welcome back</string>
+    <string name="enable_biometric">Enable biometric</string>
+    <string name="save">save</string>
+    <string name="update">update</string>
+    <string name="done">done</string>
+
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="com.example.androidchallenge.data.response.Status" />
+
+        <variable
+            name="viewModel"
+            type="com.example.androidchallenge.ui.search.viewmodel.SearchesViewModel" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_series"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <include
+            android:id="@+id/error"
+            layout="@layout/content_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility='@{viewModel.series.status == Status.ERROR ? View.VISIBLE : View.GONE, default="gone"}'
+            app:click='@{() -> viewModel.searchSeries()}'
+            app:message='@{viewModel.series.message}' />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
